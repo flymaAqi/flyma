@@ -20,7 +20,7 @@
 
 # 01.使用UniApp快速开始
 
-- 1、下载 [源码](https://github.com/flymaAqi/flyma) 并解压，复制`/commonB2`文件夹下所有文件到项目根目录(common)
+- 1、下载 [源码](https://github.com/flymaAqi/flyma) 并解压，复制`pagesB2/commonB2`文件夹下所有文件到项目根目录(common)
 
 - 2、`App.vue` 引入关键Css `main.css` `icon.css`
 
