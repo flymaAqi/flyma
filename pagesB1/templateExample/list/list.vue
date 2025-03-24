@@ -19,8 +19,8 @@
 								<view class="cu-list menu text-left">
 									<view class="cu-item" v-for="(item, index) in 3" :key="index">
 										<label class="flex justify-between align-center flex-sub">
-											<view class="flex-sub">{{ index + 3 }} 列</view>
-											<radio class="round" :value="index + 3" :checked="gridCol == index + 3">
+											<view class="flex-sub">{{ item + 2 }} 列</view>
+											<radio class="round" :value="item + 2+''" :checked="gridCol == item + 2" @tap="hideModal">
 											</radio>
 										</label>
 									</view>
@@ -415,7 +415,6 @@
 						name: '版权'
 					}
 				],
-
 				gridCol: 3,
 				skin: false,
 				modalName: '',
