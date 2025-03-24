@@ -209,7 +209,43 @@ import comNavTab from '../componentsB2/comNavTab/comNavTab.vue';
 | loveTipClose | 提示组件关闭 |
 | remoLove     |   取消收藏   |
 
-# 05.致谢
+# 05.使用本项目快速开始(推荐)
+
+> 不会复制粘贴的程序猿不是好的程序猿，想快速体验所有组件和模板，又不愿意朝自己项目一个一个的引入。
+>
+> 或者想借用我的项目结构快速发布属于自己的项目，那么我贴心的为你写下如下几个步骤，助你快速复刻flyma。
+>
+> 本人已尝试N遍，跟着步骤做不会出错！（严格）🙃
+
+1. **首先在HBuilderX中新建一个项目**
+
+<div align=center>
+  <img width="100%" style="border-radius: 5%;" bor src="https://www.helloimg.com/i/2025/03/24/67e0eeaa9392e.png">
+</div>
+
+2.**填写自己的项目名称与放置路径**
+
+<div align=center>
+  <img width="100%" style="border-radius: 5%;" bor src="https://www.helloimg.com/i/2025/03/24/67e0eeaaae5eb.png">
+</div>
+
+3.**将下载的源码根目录中所有文件夹复制进你的项目根目录**
+
+<div align=center>
+  <img width="100%" style="border-radius: 5%;" bor src="https://www.helloimg.com/i/2025/03/24/67e0eeab91433.png">
+</div>
+
+4.**打开HBuilderX点击运行-->运行至内置浏览器-->右侧出现如下模型即构建成功**
+
+<div align=center>
+  <img width="100%" style="border-radius: 5%;" bor src="https://www.helloimg.com/i/2025/03/24/67e0eeab1a924.png">
+</div>
+
+> 如果你严格跟着我的步骤来，百分之99的不会出现什么问题，另外那百分之1应该就是电脑环境的问题；
+>
+> 如果出现打不开，打开但报错，我建议先问问自己听话了没，然后再来跟我对线！
+
+# 06.致谢
 
 开源/资源库
 
@@ -218,6 +254,6 @@ import comNavTab from '../componentsB2/comNavTab/comNavTab.vue';
 - MeiYe: <https://www.meiye.art/inspiration>
 - WxminiDemo: <https://gitee.com/susuhhhhhh/wxmini_demo>
 
-# 06.支持
+# 07.支持
 
 项目内所有组件皆开源免费，有哪里不懂可直接联系作者，如果此项目能为您提供帮助，请点个star吧！
