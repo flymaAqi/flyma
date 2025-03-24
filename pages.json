@@ -1,0 +1,262 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"disableScroll": true
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pagesB1",
+		"pages": [{
+			"path": "templatePlugin/animation/animation",
+			"style": {}
+		}, {
+			"path": "templatePlugin/chat/chat",
+			"style": {
+				"disableScroll": true
+			}
+		}, {
+			"path": "templatePlugin/clockin/clockin"
+		}, {
+			"path": "templatePlugin/coupon/coupon",
+			"style": {}
+		}, {
+			"path": "templatePlugin/design/design",
+			"style": {}
+		}, {
+			"path": "templatePlugin/design/choiseEmoji/choiseEmoji",
+			"style": {}
+		}, {
+			"path": "templatePlugin/draw/draw",
+			"style": {}
+		}, {
+			"path": "templatePlugin/goods/goods",
+			"style": {
+				"disableScroll": true
+			}
+		}, {
+			"path": "templatePlugin/drawer/drawer",
+			"style": {}
+		}, {
+			"path": "templatePlugin/overturn/overturn",
+			"style": {}
+		}, {
+			"path": "templatePlugin/search/search",
+			"style": {}
+		}, {
+			"path": "templatePlugin/skeleton/skeleton",
+			"style": {}
+		}, {
+			"path": "templatePlugin/waterfall/waterfall",
+			"style": {}
+		}, {
+			"path": "templateExample/bar/bar",
+			"style": {}
+		}, {
+			"path": "templateExample/progress/progress",
+			"style": {}
+		}, {
+			"path": "templateExample/card/card",
+			"style": {}
+		}, {
+			"path": "templateExample/timeline/timeline",
+			"style": {}
+		}, {
+			"path": "templateExample/swiper/swiper",
+			"style": {}
+		}, {
+			"path": "templateExample/modal/modal",
+			"style": {}
+		},{
+			"path": "templateExample/rate/rate",
+			"style": {}
+		}, {
+			"path": "templateExample/aniNum/aniNum",
+			"style": {}
+		}, {
+			"path": "templateExample/toast/toast",
+			"style": {}
+		}, {
+			"path": "templateExample/tips/tips",
+			"style": {}
+		}, {
+			"path": "templateExample/calendar/calendar",
+			"style": {}
+		}, {
+			"path": "templateExample/form/form",
+			"style": {}
+		}, {
+			"path": "templateExample/steps/steps",
+			"style": {}
+		}, {
+			"path": "templateExample/list/list",
+			"style": {}
+		},{
+			"path": "templateExample/new-phone/new-phone",
+			"style": {}
+		},{
+			"path" : "templateExample/page-code/page-code",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},{
+			"path": "templePageCom/index/index01/index01",
+			"style": {}
+		}, {
+			"path": "templePageCom/index/index02/index02",
+			"style": {}
+		}, {
+			"path": "templePageCom/comPagesHome",
+			"style": {
+				"disableScroll": true,
+				// 将回弹属性关掉
+				"bounce": "none"
+			}
+		},{
+			"path": "templePageCom/login/login01/login01",
+			"style": {}
+		},{
+			"path": "templePageCom/login/login02/login02",
+			"style": {}
+		},{
+			"path": "templePageCom/message/message01/message01",
+			"style": {}
+		},{
+			"path": "templePageCom/message/message02/message02",
+			"style": {}
+		},{
+			"path": "templePageCom/userlist/userlist01/userlist01",
+			"style": {}
+		},{
+			"path": "templePageCom/userlist/userlist02/userlist02",
+			"style": {}
+		},{
+			"path": "templePageCom/user/user01/user01",
+			"style": {}
+		},{
+			"path": "templePageCom/user/user02/user02",
+			"style": {}
+		},{
+			"path": "templePageCom/music/music01/music01",
+			"style": {}
+		},{
+			"path": "templePageCom/education/education01/education01",
+			"style": {}
+		},{
+			"path": "templePageCom/education/education02/education02",
+			"style": {}
+		},{
+			"path": "templePageCom/news/news01/news01",
+			"style": {}
+		},{
+			"path": "templePageCom/news/news03/news03",
+			"style": {}
+		},{
+			"path": "templePageCom/comment/comment01/comment01",
+			"style": {}
+		},{
+			"path": "templePageCom/comment/comment03/comment03",
+			"style": {}
+		}, {
+			"path": "about/about/about",
+			"style": {}
+		}, {
+			"path": "about/appreciate/appreciate",
+			"style": {}
+		}, {
+			"path": "about/log/log",
+			"style": {}
+		},
+		{
+			"path" : "about/lovePageList",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "about/planOne/planOne",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "about/planTwo/planTwo",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}]
+	},{
+		"root": "pagesB2",
+		"pages": [
+			{
+				"path": "templateUi/aSenvenText/aSenvenText",
+				"style": {}
+			}, {
+				"path": "templateUi/button/button",
+				"style": {}
+			}, {
+				"path": "templateUi/button/design",
+				"style": {}
+			}, {
+				"path": "templateUi/layout/layout",
+				"style": {}
+			}, {
+				"path": "templateUi/icon/icon",
+				"style": {}
+			}, {
+				"path": "templateUi/loading/loading",
+				"style": {}
+			}, {
+				"path": "templateUi/title/title",
+				"style": {}
+			}, {
+				"path": "templateUi/background/background",
+				"style": {}
+			}, {
+				"path": "templateUi/tag/tag",
+				"style": {}
+			}, {
+				"path": "templateUi/switch/switch",
+				"style": {}
+			}, {
+				"path": "templateUi/avatar/avatar",
+				"style": {}
+			}, {
+				"path": "templateUi/shadow/shadow",
+				"style": {}
+			}, {
+				"path": "templateUi/border/border",
+				"style": {}
+			}, {
+				"path": "templateUi/checkbox/checkbox",
+				"style": {}
+			},{
+				"path": "templateUi/piano/piano",
+				"style": {}
+			}
+		]
+	}],
+	"globalStyle": {
+		"allowsBounceVertical": "NO",
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white"
+	},
+	"preloadRule": {
+		"pages/index/index": {
+			"network": "all",
+			"packages": ["pagesB2"]
+		}
+	},
+	"permission": {
+		"scope.userFuzzyLocation": {
+			"desc": "位置信息效果展示"
+		}
+	},
+	"uniIdRouter": {}
+}
