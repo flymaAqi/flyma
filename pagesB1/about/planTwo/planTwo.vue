@@ -3,14 +3,14 @@
 		<comNavTab cs-tit="玫瑰余香计划">
 			<view class="card">
 				<view class="image">
-					<image src="https://uiverse.io/astronaut.png" style="width: 160px;height: 190px;"/>
+					<image src="https://uiverse.io/astronaut.png" style="width: 160px;height: 190px;" />
 				</view>
 				<view class="heading aqi-zx-xxl"></view>
 				<view class="myGs2">
 					<view>
 						<text>莫言曾在接受采访时说过一句话，比尔盖茨捐一个亿不算多，我们村放羊的老爷爷捐五块钱不算少。慈善是源于人的本能，来自内心的需要，甚至可以成为一种信仰。</text>
 						<view class="margin-top-sm margin-bottom-sm">
-							&nbsp;&nbsp;虽然我只是一个技术白痴，但仍想为这信仰助力，然自身不过半斤八两者，因无法真正辨识真假，以至于一直徘徊在知与行的边缘。故于此处设言，期望找寻一个核心为慈善的组织，
+							&nbsp;&nbsp;虽然我只是一个技术白痴💡，但仍想为这信仰助力，然自身不过半斤八两者，因无法真正辨识真假，以至于一直徘徊在知与行的边缘。故于此处设言，期望找寻一个核心为慈善的组织，
 							当燃料做炮灰，求之不得，指哪打哪，心甘情愿。若组织需要技术，我可以提供以下服务：
 						</view>
 						<view class="margin-top-sm margin-bottom-sm">
@@ -22,8 +22,7 @@
 							<view>&nbsp;&nbsp;6.技术支持及咨询</view>
 						</view>
 						<view class="margin-top-sm margin-bottom-sm">
-							&nbsp;&nbsp;本人承诺以上服务皆为组织需要时免费提供，但请不要期待太多，毕竟我是“技术白痴”嘛！💡，
-							但能保证能力有五分便出五分力，有十分便出十分力。
+							&nbsp;&nbsp;本人承诺以上服务皆为组织需要时免费提供；
 						</view>
 						<view class="margin-top-sm margin-bottom-sm">
 							&nbsp;&nbsp;公益不是因为有意义才做，而是做了才有意义，这个世界的美好莫过于爱在循环，传递以微薄之力，星火有燎原之势。如果您身边存在此类组织，
@@ -31,15 +30,16 @@
 						</view>
 						<view class="text-center">
 							<view class="aqi-txtJinColor">
-								联系微信🤝<text class="cuIcon-weixin bg-gradual-green-light padding-xs round">Blue00008B</text>
+								联系vx🤝<text
+									class="cuIcon-weixin bg-gradual-green-light padding-xs round">Blue00008B</text>
 							</view>
 						</view>
 					</view>
 				</view>
 			</view>
-			
+
 		</comNavTab>
-		
+
 	</view>
 </template>
 
@@ -54,8 +54,7 @@
 
 			}
 		},
-		methods: {
-		}
+		methods: {}
 	}
 </script>
 
@@ -124,19 +123,19 @@
 			240px 10px #9b40fc,
 			235px 15px #9b40fc,
 			230px 20px #9b40fc,
-			227px 27px #ffffff,
+			/* 1 */
+			227px 27px #9b40fc,
 			230px 33px #9b40fc,
 			235px 38px #9b40fc,
 			240px 42px #9b40fc,
 			245px 42px #9b40fc,
-
 			253px 40px #9b40fc,
 			255px 15px #9b40fc,
 			259px 20px #9b40fc,
-			259px 27px #ffffff,
+			/* 2 */
+			259px 27px #9b40fc,
 			257px 33px #9b40fc,
 			248px 10px #9b40fc,
-
 			247px 30px #9b40fc,
 			249px 36px #9b40fc,
 			257px 45px #9b40fc,
