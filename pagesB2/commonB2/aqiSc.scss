@@ -1,0 +1,27 @@
+.aqi-xbt {
+	all: unset;
+	position: relative;
+	color: #000000;
+	z-index: 1;
+	padding: 16rpx 20rpx;
+	box-shadow: 5px 5px 6px #869da6;
+	// margin-right: 10px;
+	transform: skewX(-19deg);
+	background:
+		linear-gradient(to right, #beecd8 20%, #F4E2D8);
+
+}
+
+.aqi-xbt::after {
+	transform: translate(35%, 46%);
+	width: 22%;
+	height: 53%;
+	backdrop-filter: blur(0.5px);
+	-webkit-backdrop-filter: blur(0.5px);
+	border-radius: 50px;
+}
+
+.aqi-bdr{
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
