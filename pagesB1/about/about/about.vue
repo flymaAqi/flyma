@@ -6,9 +6,9 @@
 			        <view class="margin-top-lg text-xl text-blue">Hello！访问者</view>
 			        <text :user-select="true">
 						&nbsp;&nbsp;欢迎使用Flyma小程序!
-						该项目基于 ColorUI 为核心，根据ColorUI GA 为基础开发的小程序css组件库。
+						该项目基于 ColorUI 为核心，根据ColorUI GA 为基础开发的css组件库+UI模板。
 						在原版基础上，做了较大的代码改动与性能优化，框架与数据层面选用vue3与uniapp进行改造，对所有代码做了分包与整合，对数据结构及渲染层面做了性能调优，
-						当前代码包主包体积压缩后仅100kb左右，首屏渲染时间控制在了600ms与500ms之间，后续会持续更新与性能调优，开发者可略过以下小程序开源介绍。
+						当前代码包主包体积压缩后仅100kb左右，首屏渲染时间控制在了600ms与400ms之间，后续会持续更新与性能调优，开发者可略过以下小程序开源介绍。
 			        </text>
 					<view class="margin-top-sm margin-bottom-sm">
 						&nbsp;&nbsp;最初只为找寻灵感与代码优化，慢慢积累了很多流行组件与性能优化的经验，偶尔和朋友或一些在校生之间交谈技术，分享经验。
@@ -37,10 +37,6 @@
 			    </view>
 			</view>
 						
-			<view class="margin-xl bg-white padding-xl radius-lg shadow-lg">
-				<reciateT/>
-			</view>
-			
 			<view class="margin-xl bg-blur round padding-sm">
 			    <view class="text-content text-grey text-sm">
 					注：小程序所有文字信息和图片皆为展示效果所用，无其他任何含义,图片来源网络，如有问题请联系客服更改！
