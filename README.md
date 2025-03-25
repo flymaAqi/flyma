@@ -94,8 +94,12 @@ export function createApp() {
 - 创建好后,需要什么组件复制粘贴进来即可引入
 - 注意组件.vue文件需要一个同名父目录,比如你是flyma.vue,那么就需要一个叫flyma的父目录
 
-```
-//页面引入示例<template>  <flyma/></template>就这么简单,简不简单?简单好用!但是不推荐这么用.
+```vue
+//页面引入示例
+<template>  
+	<flyma/>
+</template>
+就这么简单,简不简单?简单好用!但是不推荐这么用.
 ```
 
 “这里要说一个优化技巧,由于小程序特性,主包建议只放一个index页面或公共组件,因为小程序主包也就是首屏加载的资源,需要在极短的时间内加载完毕,而文件过大会导致用户首屏等待时间增加,当使用了分包后,可以在用户进入主包之后,异步加载后续资源,减少用户等待焦虑.所以,你会为了方便而使用这种方式吗?”
@@ -149,7 +153,7 @@ import customNavBar from '../custom-nav-bar/custom-nav-bar.vue';
 
 - 3、页面调用
 
-```js
+```vue
 /* 使用 */
 <customNavBar :customIndex="false" :title="csTit"></customNavBar>
 ```
@@ -257,3 +261,10 @@ import comNavTab from '../componentsB2/comNavTab/comNavTab.vue';
 # 07.支持
 
 项目内所有组件皆开源免费，有哪里不懂可直接联系作者，如果此项目能为您提供帮助，请点个star吧！
+
+# License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+***Copyright (c) 2025 Flyma-Aqi***
+
