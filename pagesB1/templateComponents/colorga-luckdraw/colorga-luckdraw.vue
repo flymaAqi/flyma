@@ -31,7 +31,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="cu-draw-prize_start cu-draw-prize_item margin-lr-xs solids radius-lg">
+		<view class="bg-gradual-green cu-draw-prize_item margin-lr-xs" style="border-radius: 50px 50px 20px 20px;">
 			<view class="flex padding-sm padding-lr" @tap="lottery">
 				<view class="flex text-xxl">开 始 抽 奖</view>
 			</view>
@@ -50,7 +50,7 @@
 	} from 'vue';
 	import {whImg} from '../../../pagesB1/commonB1/commonJpg.js'
 	import imgLoadu from '../../templateComponents/u-image/imgLoadu.vue'
-	const remian_num = ref(2); //抽奖次数
+	const remian_num = ref(3); //抽奖次数
 	const prize_list = ref([{
 			icon: whImg[6],
 			name: '钻石会员',
@@ -111,10 +111,11 @@
 	}
 	// 范围随机数
 	const randomRange = (lower, upper) => {
+		console.log(Math.floor(Math.random() * (upper - lower)) + lower)
 		return Math.floor(Math.random() * (upper - lower)) + lower;
 	}
 	// 抽奖活动
-	const lottery = () => {
+	function lottery(){
 		// 防止重复点击
 		if (lock.value || remian_num.value===0) {
 			return;
@@ -122,10 +123,10 @@
 		lock.value = true
 		luckMode.value=true
 		remian_num.value-=1
-		luckChose(randomRange(0, 11)).then((e) => {
+		luckChose(randomRange(0, 9)).then((e) => {
 			console.log(e[0].name)
 			uni.showToast({
-				title: '恭喜!成功抽中了' + e[0].name,
+				title: '恭喜!抽中了' + e[0].name,
 				icon: 'success'
 			});
 			setTimeout(()=>{
@@ -137,7 +138,7 @@
 	const luckChose = (luckIndex) => {
 		return new Promise((resolve, reject) => {
 			// let that = this;
-			let maxTime = randomRange(3500, 4000); //抽奖的时间2.5s-4s之间
+			let maxTime = randomRange(3500, 4000); //抽奖的时间3.5s-4s之间
 			let rI = 0.01;
 			if (nowRunIndex.value == 0) {
 				//初始化从索引0开始显示抽奖激活的边框
@@ -258,10 +259,10 @@
 		text-align: center;
 	}
 
-	.cu-draw-prize_start {
+/* 	.cu-draw-prize_start {
 		padding-top: 0 !important;
 		background-color: #ffff7f;
-	}
+	} */
 
 	.drImg {
 		width: 120rpx;
