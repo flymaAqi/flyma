@@ -3,7 +3,7 @@
 		<comNavTab cs-tit="玫瑰余香计划">
 			<view class="card">
 				<view class="image">
-					<image src="https://uiverse.io/astronaut.png" style="width: 160px;height: 190px;" />
+					<image src="https://www.helloimg.com/i/2025/03/26/67e36943a8212.png" style="width: 160px;height: 190px;" />
 				</view>
 				<view class="heading aqi-zx-xxl"></view>
 				<view class="myGs2">
@@ -11,7 +11,7 @@
 						<text>莫言曾在接受采访时说过一句话，比尔盖茨捐一个亿不算多，我们村放羊的老爷爷捐五块钱不算少。慈善是源于人的本能，来自内心的需要，甚至可以成为一种信仰。</text>
 						<view class="margin-top-sm margin-bottom-sm">
 							&nbsp;&nbsp;虽然我只是一个技术白痴💡，但仍想为这信仰助力，然自身不过半斤八两者，因无法真正辨识真假，以至于一直徘徊在知与行的边缘。故于此处设言，期望找寻一个核心为慈善的组织，
-							当燃料做炮灰，求之不得，指哪打哪，心甘情愿。若组织需要技术，我可以提供以下服务：
+							当燃料做炮灰，求之不得，指哪打哪，心甘情愿。若组织需要技术支持，我可以提供以下服务：
 						</view>
 						<view class="margin-top-sm margin-bottom-sm">
 							<text>&nbsp;&nbsp;1.小程序,APP及网站程序编码</text>
