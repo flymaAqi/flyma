@@ -25,12 +25,12 @@
 
 			<ComTitle titleTxt="图片阴影" valueTxt="shadow-blur bg-red bg-img" :codeShow="true">
 				<view class="padding aqi-margin-sm text-center bg-white">
-					<view class="padding-xl radius shadow-blur bg-red margin-top bg-img radius-df"
-						style="background-image: url(https://image.meiye.art/pic_16325760999522VaK4dkVWNSR24HZS_WY6)">
+					<view class="padding-xl radius shadow-blur shadow bg-red margin-top bg-img radius-df"
+						style="background-image: url(https://image.meiye.art/pic_16315109642566PfLKIIH4ZEITSu8a3yNu)">
 						<view>根据背景图而改变的阴影</view>
 					</view>
-					<view class="padding-xl radius shadow-blur bg-red margin-top bg-img radius-df"
-						style="background-image: url(https://image.meiye.art/pic_1632282714292JcbiBtoiYx1_l_iirVhuI)">
+					<view class="padding-xl radius shadow-blur shadow bg-red margin-top bg-img radius-df"
+						style="background-image: url(https://image.meiye.art/pic_VF1F5E-Pe0S0X0wTj9ABL)">
 						<view>根据背景图而改变的阴影</view>
 					</view>
 				</view>
