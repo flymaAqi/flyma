@@ -93,8 +93,8 @@
 					<view class="margin-left padding-left-xl text-black">
 						<view class="margin-lr padding-left">
 							<text>
-								世界上只有两种人,一种喜欢博德之门3的人,一种没玩过博得之门3的人.
-								超开放世界,无数个选择,无数个结局.甚至还有三种性别,oh对了,
+								你说你不喜欢回合制,那是你还没玩过博德之门3.
+								超开放世界,无数个选择,无数个结局.N多种性别,oh对了,
 								我是gay尔,期待你们的加入...
 							</text>
 						</view>
@@ -103,7 +103,7 @@
 								<text class="text-blue">Q.</text>
 								<view class="cu-tag bg-blue light round sm">作者</view>
 								<text class="text-blue">：</text>
-								<text class="text-black">剧情杀,强行搞基是吧,差点给我掰弯了.</text>
+								<text class="text-black">玩到一半强行搞基是吧,差点给我掰弯了.</text>
 							</view>
 						</view>
 						<view class="flex solid-bottom padding-lr padding-tb-sm justify-end">
