@@ -12,18 +12,20 @@
 					</view>
 				</view>
 				<view class="bodyCode">
-					<text class="preCode">
-						<text style="color: #ffff00;">---&nbsp;</text>
-						<text style="color: #e34ba9;">{{classTit}}</text>
+					<view class="preCode">
+						<view style="color: #e34ba9;">
+							<text style="color: #ffff00;">---&nbsp;</text>
+							{{classTit}}
+						</view>
 						<text class="cmdCode text-cyan">
 							{{preTxt}}"
 							<text class="text-green">{{valueTxt}}</text>
 							"{{nextTxt}}
 						</text>
-						<text class="cmdCode text-gray">
+						<view class="cmdCode text-gray">
 							{{ tipTxt?tipTxt:''}}
-						</text>
-					</text>
+						</view>
+					</view>
 				</view>
 			</view>
 		</view>
@@ -136,25 +138,25 @@
 	}
 
 	.bodyCode {
-		display: flex;
-		flex-direction: column;
-		position: relative;
 		border-bottom-right-radius: 15px;
 		border-bottom-left-radius: 15px;
 		padding: 1rem;
 		background-color: black;
-		white-space: nowrap;
+		// white-space: nowrap;
 	}
 
 	.preCode {
+		display: flex;
+		flex-direction: column;
+		position: relative;
 		text-align: left;
 	}
 
 	.cmdCode {
 		height: fit-content;
 		position: relative;
-		display: flex;
-		align-items: center;
+		// display: flex;
+		// align-items: center;
 		word-break: break-all;
 		white-space: pre-line;
 		word-wrap: break-word;
