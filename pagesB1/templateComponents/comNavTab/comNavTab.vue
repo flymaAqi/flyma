@@ -1,7 +1,9 @@
 <template>
 	<view>
 		<customNavBar :customIndex="false" :title="csTit"></customNavBar>
+		<!-- #ifdef MP-WEIXIN -->
 		<shouCangTips/>
+		<!-- #endif -->
 		<slot name="pageBody"></slot>
 		<slot></slot>
 		<floatTip @onLoveTip="loveTip" @onRemoLove="remoLove" :isLove="pageRount.loves" />
@@ -19,7 +21,9 @@
 		onMounted
 	} from 'vue';
 	import floatTip from '../floatTip/floatTip.vue';
+	// #ifdef MP-WEIXIN
 	import shouCangTips from '../shouCangTips/shouCangTips.vue';
+	// #endif
 	import tipToast from '../tipToast/tipToast.vue'
 	import codeCard from '../codeCard/codeCard.vue'
 	const props = defineProps({
