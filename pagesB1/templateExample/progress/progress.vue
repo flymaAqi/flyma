@@ -19,10 +19,12 @@
 			</view>
 			<ComTitle titleTxt="环形进度条" />
 			<view class="flex flex-wrap margin-sm bg-white radius-lg">
+				<!-- #ifdef MP-WEIXIN -->
 				<canvas2dRing ref="canvas2dRing" v-for="(item, index) in data_list" :key="index" type="2d"
 					:id="'can' + index" :canvasWidth="80" f_weight="bold" :lineColor="item.lineColor"
 					:value="item.value" valueColor="#333" :f_size="15" :lineWidth="item.lineWidth"
 					:title="'flyma'"></canvas2dRing>
+				<!-- #endif -->
 				<view class="padding">
 					<view class="cu-progress__circle"
 						:style="'background:' + curColor + '; height: ' + circleDiam + 'px; width: ' + circleDiam + 'px;'">
