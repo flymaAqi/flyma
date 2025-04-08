@@ -160,13 +160,13 @@
 				    <view class="grid col-2 padding-xs">
 				        <view
 				            class="bg-img padding-bottom-xl"
-				            :style="{backgroundImage:'url('+imgUrls[4]+')'}"
+				            :style="{backgroundImage:'url('+imgUrls[1]+')'}"
 				        >
 				            <view class="bg-shadeTop padding padding-bottom-xl">上面开始</view>
 				        </view>
 				        <view
 				            class="bg-img padding-top-xl flex align-end"
-				            :style="{backgroundImage:'url('+imgUrls[5]+')'}"
+				            :style="{backgroundImage:'url('+imgUrls[2]+')'}"
 				        >
 				            <view class="bg-shadeBottom padding padding-top-xl flex-sub">下面开始</view>
 				        </view>

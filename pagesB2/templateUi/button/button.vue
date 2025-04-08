@@ -4,9 +4,9 @@
 			<ComTitle titleTxt="按钮形状" 
 			pre-txt="<button class=" next-txt="/>按钮<button>" valueTxt="cu-btn" :code-show="true">
 				<template #rB>
-					<navigator class="action" url="/pages/templateUi/button/design" hover-class="none">
-						<text class="text-df text-orange margin-right-sm">自定义</text>
-						<text class="cuIcon-skinfill text-orange"></text>
+					<navigator class="action" url="/pagesB2/templateUi/button/design" hover-class="none">
+						<text class="text-yellow aqi-txt-blod margin-right-sm">自定义</text>
+						<text class="cuIcon-skinfill text-yellow" style="font-size: 20px;"></text>
 					</navigator>
 				</template>
 				<view class="padding flex flex-wrap justify-between align-center aqi-margin-sm">

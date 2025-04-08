@@ -11,7 +11,7 @@
 							:style="{'background-image':'url('+avatar[2]+')'}">
 						</view>
 						<view class="cu-avatar margin-left"
-							:style="{'background-image':'url('+avatar[3]+')'}">
+							:style="{'background-image':'url('+avatar[0]+')'}">
 						</view>
 					</view>
 				</view>
@@ -21,7 +21,7 @@
 				<view class="aqi-margin-sm bg-gradual-blue-light">
 					<view class="padding-sm">
 						<view class="cu-avatar sm round margin-left"
-							:style="{'background-image':'url('+avatar[4]+')'}">
+							:style="{'background-image':'url('+avatar[0]+')'}">
 						</view>
 						<view class="cu-avatar round margin-left"
 							:style="{'background-image':'url('+avatar[2]+')'}">
@@ -30,7 +30,7 @@
 							:style="{'background-image':'url('+avatar[1]+')'}">
 						</view>
 						<view class="cu-avatar xl round margin-left"
-							:style="{'background-image':'url('+avatar[5]+')'}">
+							:style="{'background-image':'url('+avatar[3]+')'}">
 						</view>
 					</view>
 				
@@ -96,12 +96,12 @@
 							:style="{'background-image':'url('+avatar[3]+')'}">
 						</view>
 						<view class="cu-avatar round"
-							:style="{'background-image':'url('+avatar[4]+')'}">
+							:style="{'background-image':'url('+avatar[0]+')'}">
 						</view>
 					</view>
 					<view class="cu-avatar-group">
 						<view class="cu-avatar round lg"
-							:style="{'background-image':'url('+avatar[5]+')'}">
+							:style="{'background-image':'url('+avatar[0]+')'}">
 						</view>
 						<view class="cu-avatar round lg"
 							:style="{'background-image':'url('+avatar[1]+')'}">
@@ -131,7 +131,7 @@
 						<view class="cu-tag badge cuIcon-male bg-blue"></view>
 					</view>
 					<view class="cu-avatar round lg margin-left"
-						:style="{'background-image':'url('+avatar[4]+')'}">
+						:style="{'background-image':'url('+avatar[0]+')'}">
 						<view class="cu-tag badge cuIcon-male bg-pink"></view>
 					</view>
 				</view>
