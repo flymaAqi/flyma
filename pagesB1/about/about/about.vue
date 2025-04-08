@@ -39,7 +39,7 @@
 						
 			<view class="margin-xl bg-blur round padding-sm">
 			    <view class="text-content text-grey text-sm">
-					注：小程序或APP内所有文字信息和图片皆为展示效果所用，无其他任何含义,图片来源网络，如有问题请联系客服更改！
+					注：小程序/APP内所有文字和图片皆为展示效果所用，无其他任何含义,图片来源网络，如有问题请联系客服更改！
 				</view>
 			</view>
 		</comNavTab>

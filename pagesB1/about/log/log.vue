@@ -40,6 +40,22 @@ export default {
         return {
 			dataList:[],
             logData: [
+				{
+					bgg:'bg-gradual-red-light',
+					titIcon:'cuIcon-countdown text-purple',
+					title:'兼容优化--安装更新',
+				    version: 'v3.1.1',
+				    data: '2025/04/08',
+				    info: ['1.打卡地图优化', '2.引入App更新功能', '3.小程序与App平台兼容优化','4.对底部全局信息整合为高内聚组件']
+				},
+				{
+					bgg:'bg-gradual-green-light',
+					titIcon:'cuIcon-mobile text-cyan',
+					title:'安卓优化--文件大修',
+				    version: 'v3.1.0',
+				    data: '2025/04/06',
+				    info: ['1.针对Android的bug修复及优化', '2.对底层css文件修复优化', '3.卡片设计优化及时间格式化', '4.静态资源优化',]
+				},
                 {
 					bgg:'bg-gradual-purple-light',
 					titIcon:'cuIcon-paintfill text-orange',

@@ -115,7 +115,6 @@
 					</view>
 				</view>
 			</view>
-			
 		</comNavTab>
 	</view>
 </template>
@@ -124,7 +123,7 @@
 	import comNavTab from '../../templateComponents/comNavTab/comNavTab.vue'
 	export default {
 		components: {
-			comNavTab
+			comNavTab,
 		},
 		data() {
 			return {
@@ -160,7 +159,6 @@
 			}
 		},
 		methods: {
-
 		}
 	}
 </script>
