@@ -185,6 +185,13 @@
 			}
 		},
 		{
+			"path" : "about/webUrl",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
 			"path" : "about/planTwo/planTwo",
 			"style" : 
 			{
