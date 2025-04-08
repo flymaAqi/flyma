@@ -67,6 +67,7 @@ export default {
 			uni.request({
 				url: 'http://api.appmeta.cn/apps/latest/67f09b0423389f7ba75e6f00?api_token=c81017ad78e3f371915437f8ea9850f8',
 				success: (e) => {
+					tht.updateInfo.updShow = version_number == e.data.versionShort;
 					tht.updateInfo.install_url = e.data.install_url;
 					tht.updateInfo.versionShort = e.data.versionShort;
 					tht.updateInfo.changelog = e.data.changelog.split("\n");

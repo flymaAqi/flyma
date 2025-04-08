@@ -8,13 +8,13 @@
 			<view style="position: absolute;font-size: 35px;" @tap="closePop">
 				<text class="cuIcon-roundclose"></text>
 			</view>
-			<view v-if="updShow" style="position: absolute;font-size: 35px;bottom: 0;" @tap="closePop">
+			<view v-if="updShow && updateInfo.updShow" style="position: absolute;font-size: 35px;bottom: 0;" @tap="closePop">
 				<text class="cuIcon-roundclose"></text>
 			</view>
-			<view v-if="updShow" style="position: absolute;font-size: 35px;bottom: 0;right: 12px;" @tap="closePop">
+			<view v-if="updShow && updateInfo.updShow" style="position: absolute;font-size: 35px;bottom: 0;right: 12px;" @tap="closePop">
 				<text class="cuIcon-roundclose"></text>
 			</view>
-			<template v-if="updShow">
+			<template v-if="updShow && updateInfo.updShow">
 				<view class="UCenter-bg margin-sm" style="width: 100%;height: fit-content;">
 					<view style="width: 100%;margin-top: -30px;margin-bottom: -20px;" class="align-center text-center">
 						<image src="/static/flyma.png" style="width: 200px;height: 200px;"></image>
@@ -114,7 +114,7 @@
 			return {
 				currentPercent: 0,
 				updateSta: true,
-				updShow: this.updateInfo.version_number === this.updateInfo.versionShort
+				updShow: true
 			};
 		},
 		methods: {
@@ -130,7 +130,7 @@
 				},500);
 			},
 			closePop(){
-				this.updShow = this.updateInfo.version_number === this.updateInfo.versionShort
+				this.updShow = this.updateInfo.updShow
 				this.$refs['popup'].close()
 			},
 			openPop() {
