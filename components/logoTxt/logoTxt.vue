@@ -1,10 +1,10 @@
 <template>
 	<view style="height: 94%;">
 		<view class="cmyk margin-left" v-if="cuInx===0">
-			<text class="bleT">FLY</text>
-			<text class="pikT">M</text>
-			<text class="yeT">A</text>
-			<text class="blkT">+</text>
+			<text class="bleT">FL</text>
+			<text class="pikT">Y</text>
+			<text class="yeT">M</text>
+			<text class="blkT">A</text>
 			
 			<view class="flex flex-column cmykBot padding-top">
 				<text class="bleT">组件 + 模板</text>
@@ -12,7 +12,7 @@
 			</view>
 		</view>
 		<view class="padding-lr" v-else>
-			<view :class="txtTip.titTop?'tipMTop':'tipBottom'" class="text-xxl bleT" v-show="txtTip.title!=''">{{txtTip.title}}</view>
+			<view :class="txtTip.titTop?'tipMTop':'tipBottom'" class="text-xxl bleT">{{txtTip.title}}</view>
 			<view :class="txtTip.titLeft?'tipLeft aqi-textMode-lr':'tipRight aqi-textMode-rl'" class="tipText flex flex-column padding-top">
 				<text class="text-bold pikT text-white text-xxl">{{txtTip.tipTit}}</text>
 				<text class="text-l text-white blkT text-bold margin-lr-xs">{{txtTip.tip}}</text>

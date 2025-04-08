@@ -8,7 +8,7 @@
 			<view class="badge round text-xxl text-bold text-blue text-blod shadow">
 				Flyma
 				<text class="badgeText badgeTextAni"/>
-				<text class="text-pink text-xl">v3.0.2</text>
+				<text class="text-pink text-xl">v3.1.1</text>
 			</view>
 		</view>
 		<view class="cf margin-bottom align-center flex">
@@ -16,8 +16,8 @@
 				style="border-top-right-radius: 50px;border-bottom-right-radius: 50px;width: 45%;" @tap="fx()">
 				<view class="flex text-center align-center padding-xs">
 					<view>
-						<view class="text-bold text-lg">分享列表</view>
-						<view class="padding-right-xs cuIcon-creativefill text-gray" style="white-space: nowrap;width: fit-content;">分享的页面</view>
+						<view class="text-bold text-lg">故事大王</view>
+						<view class="padding-right-xs cuIcon-creativefill text-gray" style="white-space: nowrap;width: fit-content;">从前有个...</view>
 					</view>
 					<view class="" style="font-size: 70rpx;">
 						<text class="cuIcon-forwardfill"></text>
@@ -44,7 +44,7 @@
 			<view class="cu-item arrow" @tap="toPage" data-url="/pagesB1/about/about/about">
 				<view class="content">
 					<text class="cuIcon-profilefill text-blue"></text>
-					<text>关于小程序</text>
+					<text>关于小程序/App</text>
 				</view>
 			</view>
 			<view class="cu-item arrow" @tap="toPage" data-url="/pagesB1/about/log/log">
@@ -80,14 +80,42 @@
 				<view class="cuIcon-copy text-blue"></view>
 			</view>
 		</view>
-		<view class="cu-list menu card-menu  ">
+		<view class="cu-list menu card-menu">
+			<!-- #ifdef MP-WEIXIN -->
 			<!-- 联系作者 -->
+			<view class="cu-item" @tap="goUrl">
+				<view class="content">
+					<text class="cuIcon-mobile text-blue"></text>
+					<text>安卓App下载</text>
+				</view>
+				<text class="text-gray text-sm margin-right-sm" style="position: absolute;right: 20px;">https://fir.xcxwo.com/flymaAqi</text>
+				<view class="cuIcon-copy text-blue"></view>
+			</view>
 			<view class="cu-item">
 				<button class="cu-btn content" open-type="contact">
 					<text class="cuIcon-service text-orange text-xl"></text>
 					<text class="text-l text-black">联系作者</text>
 				</button>
 			</view>
+			<!-- #endif -->
+			<!-- #ifndef MP-WEIXIN -->
+			<view class="cu-item" @tap="openWx" data-link="https://www.helloimg.com/i/2025/03/24/67e0c1df2d6ee.jpg">
+				<view class="content">
+					<text class="cuIcon-weixin text-green"></text>
+					<text>微信小程序</text>
+				</view>
+				<text class="text-gray text-sm margin-right-xl padding-right-sm">微信小程序搜索Flyma UI组件库</text>
+				<image src="https://www.helloimg.com/i/2025/03/24/67e0c1df2d6ee.jpg" style="height: 70rpx;position: absolute;right: 10px;" mode="heightFix"></image>
+			</view>
+			<view class="cu-item" @tap="CopyText" data-link="Flyma">
+				<view class="content">
+					<text class="cuIcon-weixin text-green"></text>
+					<text>微信公众号</text>
+				</view>
+				<text class="text-gray text-sm margin-right-sm" style="position: absolute;right: 30px;">微信公众号搜索Flyma</text>
+				<view class="cuIcon-copy text-blue"></view>
+			</view>
+			<!-- #endif -->
 			<view class="cu-item">
 				<button class="cu-btn content" open-type="feedback">
 					<text class="cuIcon-write text-cyan text-xl"></text>
@@ -109,6 +137,11 @@
 			};
 		},
 		methods: {
+			goUrl(){
+				uni.navigateTo({
+					url:'/pagesB1/about/webUrl'
+				})
+			},
 			CopyText(e) {
 				uni.setClipboardData({
 					data: e.currentTarget.dataset.link,
@@ -119,6 +152,21 @@
 						});
 					}
 				});
+			},
+			openWx(e){
+				uni.setClipboardData({
+					data: 'Flyma UI组件库',
+					success: (res) => {
+						uni.showToast({
+							title: '小程序名称已复制',
+							duration: 1000
+						});
+					}
+				});
+				uni.previewImage({
+					indicator:'number',
+					urls:[e.currentTarget.dataset.link]
+				})
 			},
 			fx(){
 				uni.showToast({

@@ -11,19 +11,17 @@
 		<template v-else>
 			<!-- 这里单独开一层，用于处理底层轮播图，需要定位位置、根据下面的轮播来处理对应的数据 -->
 			<view class="qm-banner-underImg uperUderImg">
-				<view class="aniH" v-for="(item,index) in forDaImgs" :style="{'opacity':index === currentIndex?'1':'0'}">
+				<view class="aniH" v-for="(item,index) in forDaImgs" :key="index" :style="{'opacity':index === currentIndex?'1':'0'}">
 					<image :class="isFull?swiperBS[1]:''" :src="item" mode="aspectFill"
 						style="width: 100%;height:100%;"></image>
 				</view>
 			</view>
-			<swiper @longtap="tast" @touchend="tast2" class="v-qm-banner" style="height:420px" interval="2000" :circular="!cirShow" :autoplay="cirShow" :current="currentIndex"
+			<swiper @longpress="tast" @touchend="tast2" indicator-dots class="v-qm-banner" style="height:420px" interval="2000" :circular="!cirShow" :autoplay="cirShow" :current="currentIndex"
 				@change="swiperChange"><!-- :autoplay="underImgOkList[1]" -->
-				<swiper-item :class="(isFull ? swiperBS[0] : '')" class="swiper-item" style="" v-for="(item2,index2) in forLiData">
+				<swiper-item :class="(isFull ? swiperBS[0] : '')" class="swiper-item" style="" v-for="(item2,index2) in forLiData" :key="index2">
 					<logoTxt :cuInx="index2" :txtTip="item2"></logoTxt>
 				</swiper-item>
 			</swiper>
-			<zt-pointDot dotType="pointOutC" pointOutJustifyContent="center" :pointOutBottom="10" :swiperIndex="currentIndex"
-				:bannerList="{length:dataImgs.length}"></zt-pointDot>
 		</template>
 	</view>
 </template>
@@ -51,12 +49,25 @@
 			const isFull = ref(false);
 			const underImgOkList = ref([false, false, false, false, false,false,false])
 			const cirShow = ref(true)
+			const timer = ref(null)
+			const timerInx = ref(0)
 			function tast() {
 				isFull.value = true
 			}
 
 			function tast2() {
 				isFull.value = false
+				if (timer.value) {
+					clearTimeout(timer.value);  
+				}
+				timerInx.value++
+				console.log(timerInx.value)
+				timer.value = setTimeout(() => {
+					if (timerInx.value === 2) {  
+						openImg()
+					}
+					timerInx.value = 0
+				}, 250);  
 			}
 			// 轮播变动
 			function swiperChange(currnet) {
@@ -72,6 +83,13 @@
 					},500);
 				}
 				currentIndex.value = currnet.detail.current
+			}
+			function openImg(){
+				uni.previewImage({
+					indicator:'number',
+					current:currentIndex.value,
+					urls:forDaImgs.value
+				})
 			}
 			onMounted(() => {
 				dataImgs.forEach((item, index) => {//提前获取图片信息
@@ -95,6 +113,7 @@
 				forLiData,
 				forDaImgs,
 				dataImgs,
+				openImg
 			}
 		}
 	}
