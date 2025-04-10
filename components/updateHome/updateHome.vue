@@ -1,17 +1,19 @@
 <template>
 	<uniPopup :isMaskClick="false" type="top" ref="popup">
-		<view style="position: relative;height: 100px;"/>
+		<view style="position: relative;height: 100px;" />
 		<view style="margin: 10px;" class="bg-gradual-purple-light radius-xl padding-bottom-sm">
-			<view style="position: absolute;right: 12px;font-size: 35px;" @tap="closePop">
+			<view v-if="updateSta" style="position: absolute;right: 12px;font-size: 35px;" @tap="closePop">
 				<text class="cuIcon-roundclose"></text>
 			</view>
-			<view style="position: absolute;font-size: 35px;" @tap="closePop">
+			<view v-if="updateSta" style="position: absolute;font-size: 35px;" @tap="closePop">
 				<text class="cuIcon-roundclose"></text>
 			</view>
-			<view v-if="updShow && updateInfo.updShow" style="position: absolute;font-size: 35px;bottom: 0;" @tap="closePop">
+			<view v-if="updShow && updateInfo.updShow" style="position: absolute;font-size: 35px;bottom: 0;"
+				@tap="closePop">
 				<text class="cuIcon-roundclose"></text>
 			</view>
-			<view v-if="updShow && updateInfo.updShow" style="position: absolute;font-size: 35px;bottom: 0;right: 12px;" @tap="closePop">
+			<view v-if="updShow && updateInfo.updShow" style="position: absolute;font-size: 35px;bottom: 0;right: 12px;"
+				@tap="closePop">
 				<text class="cuIcon-roundclose"></text>
 			</view>
 			<template v-if="updShow && updateInfo.updShow">
@@ -20,13 +22,15 @@
 						<image src="/static/flyma.png" style="width: 200px;height: 200px;"></image>
 					</view>
 					<text class="text-xl">当前版本:</text>
-					<view class="badge round text-xxl text-bold text-blue text-blod shadow margin-top-sm bg-gradual-cyan">
+					<view
+						class="badge round text-xxl text-bold text-blue text-blod shadow margin-top-sm bg-gradual-cyan">
 						Flyma
 						<text class="badgeText badgeTextAni" />
 						<text class="text-pink text-xl">v{{ updateInfo.version_number }}</text>
 					</view>
 					<text class="text-xl margin-top-sm">最新版本:</text>
-					<view class="badge round text-xxl text-bold text-blue text-blod shadow margin-top-sm bg-gradual-cyan">
+					<view
+						class="badge round text-xxl text-bold text-blue text-blod shadow margin-top-sm bg-gradual-cyan">
 						Flyma
 						<text class="badgeText badgeTextAni" />
 						<text class="text-pink text-xl">v{{ updateInfo.versionShort }}</text>
@@ -44,7 +48,8 @@
 						<image src="/static/flyma.png" style="width: 200px;height: 200px;"></image>
 					</view>
 					<text class="text-xl">Flyma有更新版本啦！</text>
-					<view class="badge round text-xxl text-bold text-blue text-blod shadow margin-top-sm bg-gradual-cyan">
+					<view
+						class="badge round text-xxl text-bold text-blue text-blod shadow margin-top-sm bg-gradual-cyan">
 						Flyma
 						<text class="badgeText badgeTextAni" />
 						<text class="text-pink text-xl">v{{ updateInfo.versionShort }}</text>
@@ -59,7 +64,8 @@
 						<view class="content" v-for="(item,index) in updateInfo.changelog">
 							<text class="">✨{{item}}</text>
 						</view>
-						<view class="content text-center margin-top-sm" @tap="openUrl('https://fir.xcxwo.com/flymaAqi')">
+						<view class="content text-center margin-top-sm"
+							@tap="openUrl('https://fir.xcxwo.com/flymaAqi')">
 							👉如遇更新失败请点击网址手动更新:
 							<text class="text-blue">https://fir.xcxwo.com/flymaAqi</text>
 						</view>
@@ -77,7 +83,7 @@
 						</view>
 					</view>
 				</view>
-				
+
 				<view class="padding margin-lr margin-top-lg" v-else>
 					<view class="UCenter-bg">
 						<text>下载更新中...</text>
@@ -114,22 +120,22 @@
 			return {
 				currentPercent: 0,
 				updateSta: true,
-				updShow: true
+				updShow: true,
 			};
 		},
 		methods: {
-			updShowUpd(){
+			updShowUpd() {
 				uni.showLoading({
-					mask:true,
+					mask: true,
 				})
 				this.$refs['popup'].close()
-				setTimeout(()=>{
+				setTimeout(() => {
 					uni.hideLoading();
 					this.updShow = false
 					this.$refs['popup'].open()
-				},500);
+				}, 500);
 			},
-			closePop(){
+			closePop() {
 				this.updShow = this.updateInfo.updShow
 				this.$refs['popup'].close()
 			},
@@ -152,14 +158,17 @@
 					//下载进度监听
 					this.currentPercent = current
 				}).then(fileName => {
+					console.log(fileName)
 					//下载完成
 					if (fileName) {
 						//自动安装App
+						uni.setStorageSync('install',fileName);
 						installApp(fileName, () => {
+							
 						})
 					}
 				}).catch(e => {
-
+					console.log('cccccc====')
 				})
 			}
 		},
