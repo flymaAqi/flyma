@@ -84,7 +84,7 @@
 				<ComTitle titleTxt="点击跳转"/>
 			    <swiper class="tips-swiperitem margin-tb" :autoplay="true" :circular="true" interval="2000" duration="500">
 			        <block v-for="(item, index) in Headlines" :key="index">
-			            <swiper-item @touchmove.stop.prevent="falseFun" @tap="linesclick" :data-url="item.url">
+			            <swiper-item @touchmove.stop.prevent="falseFun" @tap="linesclick">
 			                <view class="bg-orange light">
 			                    <view class="padding-xs text-xl">
 			                        <text class="cuIcon-magic text-orange"></text>
@@ -204,14 +204,9 @@ export default {
         };
     },
     methods: {
-        /**
-         * 点击跳转
-         * @param {*} e
-         */
-        linesclick: function (e) {
-            var swip = e.currentTarget.dataset;
+        linesclick() {
             uni.navigateTo({
-                url: swip.url
+                url: '/pagesB1/about/about/about'
             });
         },
 
