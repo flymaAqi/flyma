@@ -41,6 +41,14 @@ export default {
 			dataList:[],
             logData: [
 				{
+					bgg:'bg-gradual-cyan-light',
+					titIcon:'cuIcon-camera text-yellow',
+					title:'安卓修复--优化更新',
+				    version: 'v3.1.2',
+				    data: '2025/04/09',
+				    info: ['1.app更新后自动删除安装包', '2.对样式做了兼容优化', '3.引入webView','4.静态资源优化','5.新增地址选择器组件']
+				},
+				{
 					bgg:'bg-gradual-red-light',
 					titIcon:'cuIcon-countdown text-purple',
 					title:'兼容优化--安装更新',
