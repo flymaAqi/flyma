@@ -1,5 +1,6 @@
 <template>
 	<view style="height: 100%;" class="Jpage">
+		<!-- bug微信朋友圈页面显示内容 -->
 		<view style="height: 99vh;width: 100%;" :style="{'display':isShare?'none':'block'}" class="text-center">
 			<view style="top: 50%;position: relative;">
 				<view class="text-blod text-xl text-red margin-bottom">css轻量、高效UI组件库</view>
@@ -59,7 +60,6 @@
 				</view>
 				<view :class="tabbarInx === 3 ? 'text-blue' : 'text-gray'" class="margin-top-xs">关于</view>
 			</view>
-
 		</view>
 	</view>
 </template>
@@ -67,7 +67,7 @@
 <script>
 	import {
 		ref,
-		shallowRef
+		shallowRef,
 	} from 'vue';
 	import {
 		debounce,
@@ -83,8 +83,26 @@
 		// 分享到朋友圈
 		onShareTimeline() {
 			return {
-				title: 'Flyma+css高效UI组件库',
+				
 			};
+		},
+		onLoad() {
+			uni.removeStorage({
+				key:'flymaVersion',
+			})
+			var install = uni.getStorageSync('install');
+			if(install){
+				plus.io.resolveLocalFileSystemURL(install, function(entry) {
+					//删除文件
+					entry.remove(success => {
+						uni.removeStorage({
+							key:'install'
+						});
+					}, err => {
+					});
+				}, function(e) {
+				})
+			}
 		},
 		setup() {
 			//触底事件
