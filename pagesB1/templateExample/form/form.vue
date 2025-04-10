@@ -7,38 +7,38 @@
 			<form>
 				<ComTitle titleTxt="输入条"/>
 				<view class="cu-form-group margin-top-sm">
-					<view class="title">邮件</view>
+					<view class="title">这里</view>
 					<input placeholder="两字短标题" />
 				</view>
 
 				<view class="cu-form-group">
-					<view class="title">输入框</view>
+					<view class="title">只是展</view>
 					<input placeholder="三字标题" />
 				</view>
 
 				<view class="cu-form-group">
-					<view class="title">收货地址</view>
+					<view class="title">示样式而</view>
 					<input placeholder="统一标题的宽度" />
 				</view>
 
 				<view class="cu-form-group">
-					<view class="title">收货地址</view>
+					<view class="title">已没有交互</view>
 					<input placeholder="输入框带个图标" />
 					<text class="cuIcon-locationfill text-orange"></text>
 				</view>
 
 				<view class="cu-form-group">
-					<view class="title">验证码</view>
+					<view class="title">和存储功能审</view>
 					<input placeholder="输入框带个按钮" />
 					<button class="cu-btn bg-green shadow">验证码</button>
 				</view>
 
 				<view class="cu-form-group">
-					<view class="title">手机号码</view>
+					<view class="title">核能学点技术知识吗</view>
 					<input placeholder="输入框带标签" />
 					<view class="cu-capsule radius">
-						<view class="cu-tag bg-blue">+86</view>
-						<view class="cu-tag line-blue">中国大陆</view>
+						<view class="cu-tag bg-blue">+87</view>
+						<view class="cu-tag line-blue">核无眼</view>
 					</view>
 				</view>
 				<ComTitle titleTxt="选择器"/>
@@ -80,10 +80,11 @@
 				</view>
 
 				<view class="cu-form-group">
-					<view class="title">地址选择</view>
-					<picker mode="region" @change="RegionChange" :value="region" :custom-item="customItem">
-						<view class="picker">{{ region[0] }}，{{ region[1] }}，{{ region[2] }}</view>
-					</picker>
+					<view class="title">地址选择器</view>
+					<view class="picker" style="max-width: 70%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;" @tap="openAddress">
+						<text class="margin-right">{{ region[0] }}，{{ region[1] }}，{{ region[2] }}</text>
+						<text class="cuIcon-right text-green" style="position: absolute;right: 10px;font-size: 17px;"></text>
+					</view>
 				</view>
 				<ComTitle titleTxt="图片选择"/>
 				<view class="cu-bar bg-white margin-top-sm">
@@ -119,6 +120,7 @@
 						placeholder="多行文本输入框"></textarea>
 				</view>
 			</form>
+			<datePicks ref="scroll" @change='chooseSuccess'/>
 		</comNavTab>
 	</view>
 </template>
@@ -126,10 +128,12 @@
 <script>
 	import comNavTab from '../../templateComponents/comNavTab/comNavTab.vue';
 	import ComTitle from '../../templateComponents/ComTitle/ComTitle.vue';
+	import datePicks from '../../templateComponents/date-picks/date-picks.vue';
 	export default {
 		components: {
 			comNavTab,
-			ComTitle
+			ComTitle,
+			datePicks
 		},
 		data() {
 			return {
@@ -193,7 +197,6 @@
 				modalName: null,
 				textareaAValue: '',
 				textareaBValue: '',
-				customItem: ''
 			};
 		},
 		methods: {
@@ -204,7 +207,14 @@
 			MultiChange(e) {
 				this.multiIndex = e.detail.value
 			},
-
+			//打开地址选择器
+			openAddress() {
+				this.$refs.scroll.open()
+			},
+			//地址选择成功
+			chooseSuccess(e) {
+				this.region = e.value
+			},
 			MultiColumnChange(e) {
 				let data = {
 					multiArray: this.multiArray,
@@ -276,11 +286,6 @@
 			DateChange(e) {
 				this.date = e.detail.value
 			},
-
-			RegionChange(e) {
-				this.region = e.detail.value
-			},
-
 			ChooseImage() {
 				uni.chooseImage({
 					count: 4,
