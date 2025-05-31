@@ -7,7 +7,7 @@ Flyma UI组件库
 </div>
 
 <div align=center>
-  <img width="180px" style="border-radius: 5%;" bor src="https://github.com/flymaAqi/flyma/blob/main/_githubPng/anzhuo.png">
+  <img width="280px" style="border-radius: 5%;" bor src="https://github.com/flymaAqi/flyma/blob/main/_githubPng/anzhuo.png">
 </div>
 
 - 网址：https://fir.xcxwo.com/flymaAqi
@@ -21,7 +21,7 @@ Flyma UI组件库
 </div>
 
 <div align=center>
-  <img width="180px" style="border-radius: 5%;" bor src="https://github.com/flymaAqi/flyma/blob/main/_githubPng/flymaUI.png">
+  <img width="280px" style="border-radius: 5%;" bor src="https://github.com/flymaAqi/flyma/blob/main/_githubPng/flymaUI.png">
 </div>
 
 - 微信内搜索(注意有空格)：Flyma UI组件库
