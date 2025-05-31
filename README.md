@@ -7,7 +7,7 @@
 </div>
 
 <div align=center>
-  <img width="180px" style="border-radius: 5%;" bor src="https://www.helloimg.com/i/2025/04/05/67f09e5fee9c6.png">
+  <img width="180px" style="border-radius: 5%;" bor src="[https://www.helloimg.com/i/2025/04/05/67f09e5fee9c6.png](https://github.com/flymaAqi/flyma/blob/main/static/flyma.png)">
 </div>
 
 - 网址：https://fir.xcxwo.com/flymaAqi
@@ -21,7 +21,7 @@
 </div>
 
 <div align=center>
-  <img width="180px" style="border-radius: 5%;" bor src="https://www.helloimg.com/i/2025/03/24/67e0c1df2d6ee.jpg">
+  <img width="180px" style="border-radius: 5%;" bor src="https://github.com/flymaAqi/flyma/blob/main/static/flyma.png">
 </div>
 
 > 不要问为什么没有ios版本，证书收费太贵了，还是美金，不过后续会想办法搞一个的😗
